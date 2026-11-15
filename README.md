@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/pdparchitect/noodle/main/Incubator/Pion/Support/AppIcon.png" alt="Pion" width="96">
+<img src="https://media.githubusercontent.com/media/pdparchitect/noodle/main/Incubator/Pion/Support/AppIcon.png" alt="Pion" width="96">
 
 # Pion
 
