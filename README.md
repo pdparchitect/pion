@@ -1,71 +1,136 @@
+<img width="100%" alt="Pion: a dark chess pawn bearing a shield, lit in electric blue." src="https://github.com/user-attachments/assets/607d6406-5acf-440c-863b-49bdbbfce711" />
+
 <div align="center">
 
-<img src="https://media.githubusercontent.com/media/pdparchitect/noodle/main/Incubator/Pion/Support/AppIcon.png" alt="Pion" width="96">
-
-# Pion
-
-**An agentic environment for cyber defence.**<br>
-A team of AI agents investigates incidents with you, and you decide what changes.
+**AI-assisted cyber defence.**<br>
+A team of AI agents monitors your environment, investigates incidents and recommends responses,<br>
+using the security tools you already have. You decide what changes.
 
 <a href="https://github.com/pdparchitect/noodle/releases/download/pion-latest/Pion-arm64.dmg"><img alt="Download Pion for Mac" src="https://img.shields.io/badge/Download%20for%20Mac-1f2328?style=for-the-badge&logo=apple&logoColor=white" height="44"></a>
 
-[Source](https://github.com/pdparchitect/noodle/tree/main/Incubator/Pion) · [Releases](https://github.com/pdparchitect/noodle/releases/tag/pion-latest) · [Changelog](https://github.com/pdparchitect/noodle/blob/main/Incubator/Pion/CHANGELOG.md) · [Noodle](https://github.com/pdparchitect/noodle)
+[Get started](#get-started) · [Features](#features) · [Tools](#tools) · [Source](https://github.com/pdparchitect/noodle/tree/main/Incubator/Pion) · [Changelog](https://github.com/pdparchitect/noodle/blob/main/Incubator/Pion/CHANGELOG.md) · [License](https://github.com/pdparchitect/noodle/blob/main/Incubator/Pion/LICENSE.md)
 
 </div>
 
-<img width="1672" height="941" alt="Pion" src="https://github.com/user-attachments/assets/607d6406-5acf-440c-863b-49bdbbfce711" />
+<p align="center">
+  <img width="100%" alt="Pion on a Mac: the team works an impossible-travel sign-in for the finance director. Five agents report the stolen session, the stealer and the files it read, and the case record beside them lists the findings, evidence and entities." src=".github/readme/hero.png" />
+</p>
 
-When an alert fires, open an Investigation and bring in the agents that should work it. One agent
-leads, sets the severity from the evidence and keeps the team on the objective. The others pull
-logs, check indicators, look up users and hosts, and report back in the same conversation.
+Open an Investigation and a team of agents works it with you: one leads, the others
+trace sign-ins, read endpoint telemetry, check reputation and pull the logs. They record
+what they find as they go, with the evidence behind it, and bring you what needs a
+decision. **Agents never change a system themselves:** they recommend, and you act.
 
-Everything they learn goes into the case record: findings with the evidence behind them, the
-queries that produced that evidence, and the users, hosts and addresses involved. Every change to
-the case is written to an audit log that is only ever added to.
+Each agent runs on the [harness](https://github.com/pdparchitect/noodle/blob/main/docs/harness-setup.md)
+you choose, with your own account: **Codex**, **Claude Code**, **Apple Intelligence** on
+device, or any other harness Noodle supports.
 
-Agents never touch a system on their own. They recommend containment and remediation, and you
-carry it out.
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <img width="100%" alt="The PHP2Shell Investigation, contained: tasks waiting on you sit at the top of the sidebar, beside the case record." src=".github/readme/tasks.png"><br>
+      <b>Waiting on you.</b> What needs your decision sits at the top of the sidebar.
+    </td>
+    <td width="50%" valign="top">
+      <img width="100%" alt="The Detection group: the triage agent sums up the night's alerts and another offers a tuned detection rule." src=".github/readme/groups.png"><br>
+      <b>Groups.</b> Standing teams for the work between incidents.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <img width="100%" alt="A credential phishing Investigation with its Audit Log: every finding, piece of evidence and status change, and who made it." src=".github/readme/audit.png"><br>
+      <b>Audit Log.</b> Every change to the case and who made it, only ever added to.
+    </td>
+    <td width="50%" valign="top">
+      <img width="100%" alt="Welcome to Pion: sign in to Codex, Claude or Apple Intelligence to set up your team." src=".github/readme/welcome.png"><br>
+      <b>Ready in minutes.</b> Sign in once and Pion sets up a starter team.
+    </td>
+  </tr>
+</table>
 
-## Your stack, your models
+## Get Pion
 
-Agents run on the harnesses you already pay for, such as Codex and Claude Code, signed in with your
-own account. Connect them to the tools your team already uses:
+| App | What it does | Download |
+| --- | --- | --- |
+| **Pion** | AI-assisted cyber defence. | [![macOS 26 DMG](https://img.shields.io/badge/macOS_26-DMG-0A84FF?logo=apple&logoColor=white)](https://github.com/pdparchitect/noodle/releases/download/pion-latest/Pion-arm64.dmg) [![macOS 26 ZIP](https://img.shields.io/badge/macOS_26-ZIP-0A84FF?logo=apple&logoColor=white)](https://github.com/pdparchitect/noodle/releases/download/pion-latest/Pion-arm64.zip) |
 
-- **Identity:** Okta, Microsoft Entra ID, Google Workspace
-- **Endpoints:** CrowdStrike Falcon, SentinelOne, Microsoft Defender XDR
-- **Logs:** Splunk, Elastic, Microsoft Sentinel, Sumo Logic
-- **Cloud:** AWS, Google Cloud, Cloudflare, Wiz, GitHub
-- **Threat intelligence:** VirusTotal, Shodan, GreyNoise, AbuseIPDB, urlscan.io, AlienVault OTX,
-  Censys, Have I Been Pwned
-- **Email and exposure:** Proofpoint TAP, Tenable
+Pion needs a Mac with Apple silicon and macOS 26 or later. Open the DMG and drag Pion to
+**Applications**. Pion keeps itself up to date. To remove it, drag it from Applications to the Bin.
 
-Any other service can be added over MCP.
+Pion is incubating: it works, and it changes quickly. Expect new features in most
+releases, and the odd rough edge.
 
-## Built on Noodle
+## Get started
 
-Pion runs on the core of [Noodle](https://github.com/pdparchitect/noodle), the open source app for
-personal AI agents. Its agents, groups and harnesses work the way Noodle's do, but Pion keeps its
-own agents, conversations and sign-ins apart from Noodle's.
+1. Open Pion and sign in to a harness on the welcome screen. Pion sets up a starter team
+   of agents and the group they share.
+2. Connect the services your team should use in **Settings → Tools**, and assign each to the
+   agents that need it.
+3. Choose **File → New Investigation** (⌘N), say what happened, and pick the team. Or just tell
+   an agent what you have seen: when it finds something worth a record, it opens the
+   Investigation itself and leads it.
 
-While Pion is incubating, its source lives in Noodle's repository under
-[`Incubator/Pion`](https://github.com/pdparchitect/noodle/tree/main/Incubator/Pion). Pion depends
-on much of Noodle's code, and keeping both in one repository lets them change together while the
-design settles. Once it does, Pion moves here. Until then, this repository is its home page and
-releases are published from Noodle's.
+<details>
+<summary><b>Investigations, groups and agents</b></summary>
 
-## Download
+The sidebar lists your Investigations, most severe first, then your groups and your agents.
+**View → Sidebar** can also list the tasks waiting on you, closed Investigations and your
+tools, with a red dot on any that needs you to sign in.
 
-Download the latest
-[DMG](https://github.com/pdparchitect/noodle/releases/download/pion-latest/Pion-arm64.dmg) or
-[ZIP](https://github.com/pdparchitect/noodle/releases/download/pion-latest/Pion-arm64.zip) from the
-[Pion release](https://github.com/pdparchitect/noodle/releases/tag/pion-latest) in Noodle's
-repository. Pion needs a Mac with Apple silicon and macOS 26 or later. Open the DMG, drag Pion to
-Applications, and it keeps itself up to date from there.
+An Investigation is a conversation with its team, with an objective, a status, a severity
+and a case record. One agent leads it; you own it. It starts unassessed until the lead sets
+its severity from the evidence. The toolbar sets its status and edits its title, objective
+and team. **Investigation → Close Investigation…** closes it as a false positive, resolved
+or handed off, with a note; its agents can still read it, but no longer post or record in it.
 
-Pion is an early prototype, so expect rough edges.
+A group is a standing team you talk to outside any Investigation, such as detection
+engineering or threat research. Each agent also has a conversation of its own with you.
+
+Write in the field at the bottom; Return sends. Mention an agent with @. The plus attaches
+files, and the microphone (⌘⇧D) turns what you say into text to read over before sending.
+
+</details>
+
+## Features
+
+- **Investigations** with a lead agent, a team, a severity and a status you control.
+- **A case record** beside each one: findings with the evidence they cite, evidence with the
+  query that produced it, and the entities involved.
+- **An Audit Log** of every change to the case, only ever added to.
+- **Groups** of agents for the work between incidents.
+- **Tasks** waiting on you, at the top of the sidebar.
+- **Read-only lookups**: agents investigate; changes to a system are yours to make.
+- **Your own AI**: Codex, Claude Code, Apple Intelligence and more, on your accounts.
+- **Restricted by default**: each agent works in a sandbox of its own on your Mac.
+- **Native and fast**: voice input, attachments, annotations, Quick Look, notifications.
+
+## Tools
+
+Connect your stack in **Settings → Tools**. Each service's form has **Setup Steps**: where in
+the service's console to make its key or account, and the least access to give it. Pion's
+own lookups only read. Add two accounts of the same service side by side, and assign each
+to the agents that should use it.
+
+| | |
+| --- | --- |
+| **Reputation and intel** | VirusTotal, Shodan, Censys, GreyNoise, CrowdSec CTI, AbuseIPDB, AlienVault OTX, urlscan.io, Have I Been Pwned |
+| **Attack surface** | crt.sh, NVD, Tenable |
+| **Identity** | Okta, Microsoft Entra ID, Google Workspace |
+| **Endpoint and email** | CrowdStrike Falcon, Microsoft Defender XDR, SentinelOne, Proofpoint TAP |
+| **Logs and monitoring** | Splunk, Elastic, Microsoft Sentinel, Sumo Logic, Grafana, Sentry |
+| **Cloud and code** | AWS Security, Google Cloud, Cloudflare Security, Wiz, GitHub |
+
+Any MCP server works too. AWS Security signs in through your organisation's IAM Identity
+Center and covers every account you are assigned; Google Cloud and Google Workspace sign
+in with your Google account.
 
 ## License
 
-Source available under the
-[PolyForm Noncommercial License 1.0.0](https://github.com/pdparchitect/noodle/blob/main/Incubator/Pion/LICENSE.md).
-Free to read, use and change for noncommercial purposes. This is not an open-source license.
+Source available under the [PolyForm Noncommercial License 1.0.0](https://github.com/pdparchitect/noodle/blob/main/Incubator/Pion/LICENSE.md): free to
+read, use and change for noncommercial purposes. This is not an open-source license.
+Pion is built on [Noodle](https://github.com/pdparchitect/noodle), which is open source
+under Apache 2.0.
+
+## Project
+
+[Changelog](https://github.com/pdparchitect/noodle/blob/main/Incubator/Pion/CHANGELOG.md) · [Contributing](https://github.com/pdparchitect/noodle/blob/main/Incubator/Pion/CONTRIBUTING.md) · [Noodle](https://github.com/pdparchitect/noodle) · [@pdp on X](https://x.com/pdp)
