@@ -133,4 +133,4 @@ under Apache 2.0.
 
 ## Project
 
-[Changelog](https://github.com/pdparchitect/noodle/blob/main/Incubator/Pion/CHANGELOG.md) · [Contributing](https://github.com/pdparchitect/noodle/blob/main/Incubator/Pion/CONTRIBUTING.md) · [Noodle](https://github.com/pdparchitect/noodle) · [@pdp on X](https://x.com/pdp)
+[Changelog](https://github.com/pdparchitect/noodle/blob/main/Incubator/Pion/CHANGELOG.md) · [Contributing](https://github.com/pdparchitect/noodle/blob/main/Incubator/Pion/CONTRIBUTING.md) · [Noodle](https://github.com/pdparchitect/noodle) · [Rook](https://github.com/pdparchitect/rook) · [@pdp on X](https://x.com/pdp)
